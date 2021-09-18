@@ -1,0 +1,144 @@
+.blog-contents {
+    font-family: 
+    'メイリオ',
+    'Hiragino kaku Gothic Pro ',
+    sans-serif;
+    background-image :url(wood.jpeg);
+    /* width:100%; */
+    font-family: 'Yomogi', cursive;
+    margin:0;
+    
+    
+}
+
+h1 {font-size: 38px;
+    margin-top: 0;
+    margin-bottom:20;
+    /* border-bottom: solid 5px rgb(231, 43, 43);*/} 
+    
+p{line-height:1.5}
+
+h2{font-size: 25px;
+   /* margin-top: auto;*/
+    margin-bottom:0;
+    border-bottom: solid 5px rgb(231, 43, 43);}
+.blog-header {
+        width:100%;
+        font-family: 'Kosugi Maru', sans-serif;
+        background-color:#fff;
+        margin-bottom: solid 1px #aaa;
+        margin-bottom: 30px;
+        -webkit-box-shadow:0 1px 7px #aaa;
+        box-shadow: 0 1px 7px #aaa;
+        padding:5px 5px 0.1px 5px;
+        
+        }
+
+header h1 img {vertical-align: -5px;
+            margin-right:5px;}
+nav ul{list-style-type:none;
+       margin-top:0;
+       margin-bottom:0;
+       padding-left:0
+    　　
+
+}
+
+nav li{
+    display:inline;
+    font-size: 12px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom: 10px;
+    background-color: #fff;
+}
+
+nav{
+    width: 100%;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: right;
+    margin-top:-40px;
+    margin-bottom: 10px;
+
+
+}
+nav li{
+    color: #000;
+    font-size: 18px;
+    transition:0.2s;
+    position: relative;
+    padding-left: 30px;
+    padding-right:30px;
+}
+nav li .submenu{
+
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    display: none;    
+    background-color:rgb(255, 255, 255);
+}
+nav li .submenu li{
+    display: block; 
+    font-size: 15px;
+    border: solid 1px #000;
+    margin-left: 0;
+    margin-right: 0;
+    padding:10px;
+}
+
+nav li .submenu ul{
+    
+    padding: 0;
+}
+/* nav li:hover{
+    
+    font-size: 30px; 
+} */
+nav li:hover .submenu{
+    display: block;
+    font-size: 12px;
+}
+
+.side {
+    
+    border: 1px solid #000;
+    width: 200px;
+    margin-left:0;
+    background-color:rgb(255, 255, 255);
+}
+.menu{
+    border: solid 1px #000;
+    text-align: center;
+
+
+} 
+article {background-color:rgb(255, 255, 255); 
+    width: 900px;
+    margin-left:auto;
+    margin-right:auto;
+    border: solid 1px #aaa;
+    padding: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    box-sizing: border-box;
+    margin-bottom:15px;
+    -webkit-box-shadow:1px 1px 3px #aaa;
+    box-shadow:1px 1px 3px #aaa;    
+    border-radius:20px
+}
+ figure.photo-center {
+    max-width:100%;
+    margin-top:30px;
+    margin-bottom:30px
+} 
+footer{
+    width: 900px;
+    margin-left:auto;
+    margin-right:auto;
+    color:#fff
+}
+
+
