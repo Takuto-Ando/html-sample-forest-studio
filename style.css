@@ -17,7 +17,8 @@
     font-family: 'Kosugi Maru', sans-serif;
     background-color:#fff;
     margin: 0px 0px 32px 0px;
-    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%)
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
+    padding-bottom:15px;
  }
 
  /* .blog-header__container {
@@ -33,17 +34,18 @@
     margin: 0px;
     padding: 40px 0 40px 0;
     background: #fff;
-  
+    
 }
 
 .blog-header__logo-link {
     color: #12334b;
     text-decoration: none; 
+    padding-top: 4px;
 }
 
 .blog-header__logo img {
-    margin-right:10Spx;
-
+    margin-right:5px;
+    
 }
 
 
@@ -71,6 +73,7 @@
     position: relative;
     background: #fafafa;
     padding: 0;
+    
 }
 
 .blog-header__menu {
@@ -84,7 +87,7 @@
 
 .blog-header__menu-item {
     display: inline-block;
-    margin: 0px 8px;
+    margin: 0px 45px;
     padding: 0px;
     list-style: none;
 }
@@ -123,22 +126,94 @@
     margin-top: 0;
     margin-bottom:20;
     }  */
-h1 {
+
+
+.contents_container {
+    display: flex;
+    flex-wrap: wrap; 
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 0px 15px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+ 
+ .contents_content-side {
+    width: 230px;
+    height: 800px;
+    margin-left: 35px;
+    background-color:rgb(255, 255, 255);
+    border:solid 1px #aaa;
+    box-shadow:1px 1px 3px #aaa;    
+    border-radius:20px;
+    
+}   
+
+.blog-aside {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+}
+
+.blog-aside-menu-item{
+    border-bottom: 1px solid #dddddd;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #666666;
+    
+
+}
+
+.blog-aside-menu{
+    padding: 0px;
+    border: 1px solid #dddddd;
+
+}
+.blog-aside-menu-item-link{
+    text-decoration: none;
+    color: #000;
+   
+}
+.blog-aside-menu-item:hover{
+    
+    opacity: 0.5;
+}
+h3 {
     display: block;
     position: relative;
-    margin: 2.4em 0 1.6em 0;
+    margin-top: 17px;
+    margin-bottom: 0;
     padding: .5em .5em;
-    font-size: 22px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #12334b;
+    background: #fafafa;
+   
+}
+
+
+
+    h1 {
+    display: block;
+    position: relative;
+    margin: 17px 0 1.6em 0;
+    padding: .5em .5em;
+    font-size: 25px;
     font-weight: 700;
     color: #12334b;
     background: #fafafa;
     border-left: 4px solid #008dab;
-    margin-top: 0;
+   
 }
 
 p{line-height:1.5}
 
-h2{font-size: 25px;
+h2{font-size: 22px;
     display: block;
     position: relative;
     margin: 0;
@@ -226,13 +301,7 @@ nav li:hover .submenu{
     font-size: 12px;
 } */
 
-.side {
-    
-    border: 1px solid #000;
-    width: 200px;
-    margin-left:0;
-    background-color:rgb(255, 255, 255);
-}
+
 .menu{
     border: solid 1px #000;
     text-align: center;
@@ -253,15 +322,17 @@ article {background-color:rgb(255, 255, 255);
     box-shadow:1px 1px 3px #aaa;    
     border-radius:20px
 }
- figure.photo-center {
+ .figure.photo-center {
     max-width:100%;
     margin-top:30px;
     margin-bottom:30px
 } 
 
+
 .blog-footer {
     background: #12334b;
     padding: auto;
+    
 }
 
 .blog-footer__copyright {
@@ -272,4 +343,5 @@ article {background-color:rgb(255, 255, 255);
 }
 .blog-footer__text-link {
     color: #fff;
+    text-decoration: none;
 }
