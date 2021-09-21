@@ -10,7 +10,9 @@
     
 }
 
-
+.contents{
+     margin-top:220px ; 
+}
 
 .blog-header {
     width:100%;
@@ -19,6 +21,12 @@
     margin: 0px 0px 32px 0px;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
     padding-bottom:15px;
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index: 2;
+    
+
  }
 
  /* .blog-header__container {
@@ -80,9 +88,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow-x: auto;
+    /* overflow-x: scroll; */
     padding: 16px 0px;
     margin: 0%;
+    white-space: nowrap;      /* 2行阻止 */
 }
 
 .blog-header__menu-item {
@@ -128,34 +137,38 @@
     }  */
 
 
+
 .contents_container {
     display: flex;
-    flex-wrap: wrap; 
-    max-width: 1200px;
+    max-width: 1140px;
     margin: 0px auto;
     padding: 0px 15px;
     position: relative;
     z-index: 1;
     overflow: hidden;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
-
+.contents_content-main {
+    width: 100%;
+}
  
- .contents_content-side {
-    width: 230px;
-    height: 800px;
-    margin-left: 35px;
-    background-color:rgb(255, 255, 255);
-    border:solid 1px #aaa;
-    box-shadow:1px 1px 3px #aaa;    
-    border-radius:20px;
-    
-}   
 
+.contents_content-side{
+    height: 800px;
+    margin-bottom: 60px;
+    width: 245px;
+    margin-left: 40px;
+    background-color: rgb(255, 255, 255);
+    border: solid 1px #aaa;
+    box-shadow: 1px 1px 3px #aaa;
+    border-radius: 20px;
+}
 .blog-aside {
     display: flex;
     flex-direction: column;
     height: 100%;
-    
 }
 
 .blog-aside-menu-item{
@@ -172,7 +185,7 @@
 .blog-aside-menu{
     padding: 0px;
     border: 1px solid #dddddd;
-
+    
 }
 .blog-aside-menu-item-link{
     text-decoration: none;
@@ -309,7 +322,6 @@ nav li:hover .submenu{
 
 } 
 article {background-color:rgb(255, 255, 255); 
-    width: 900px;
     margin-left:auto;
     margin-right:auto;
     border: solid 1px #aaa;
@@ -344,4 +356,33 @@ article {background-color:rgb(255, 255, 255);
 .blog-footer__text-link {
     color: #fff;
     text-decoration: none;
+}
+
+
+@media(max-width: 1200px) {
+/* PC以外の端末 
+横幅が1200px以下 */
+.contents_content-side {
+  
+    height: 800px;
+    margin-bottom: 60px;
+    width: 100%;
+    margin-left: auto;
+    background-color:rgb(255, 255, 255);
+    border:solid 1px #aaa;
+    box-shadow:1px 1px 3px #aaa;    
+    border-radius:20px;
+    
+}   
+
+.contents_container {
+    display: flex;
+    flex-wrap: wrap; 
+    max-width: 1140px;
+    margin: 0px auto;
+    padding: 0px 15px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
 }
